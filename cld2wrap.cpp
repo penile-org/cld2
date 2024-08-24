@@ -21,6 +21,12 @@ extern "C" {
     return b;
   }
 
+  char *
+  Lid2code(uint32_t id)
+  {
+    return (char*)CLD2::LanguageCode((CLD2::Language)id);
+  }
+
   uint32_t
   Ldetectl(char *s, uint32_t len)
   {
